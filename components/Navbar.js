@@ -21,24 +21,29 @@ export default function Navbar() {
             <FontAwesomeIcon icon={faBars} />
           )}
         </button>
-        <ul className="nav_links" style={{ top: isOpen ? '0' : '-200%' }}>
-          <li>
-            <Link href="/">
+        <ul
+          className="nav_links"
+          style={{
+            left: isOpen ? '0' : '-500%',
+          }}
+        >
+          <li onClick={MenuBtn}>
+            <Link href="/dailydigest">
               <a>Daily Digest</a>
             </Link>
           </li>
-          <li>
-            <Link href="/about">
+          <li onClick={MenuBtn}>
+            <Link href="/designtools">
               <a>Design Tools</a>
             </Link>
           </li>
-          <li>
-            <Link href="/blog/hello-world">
+          <li onClick={MenuBtn}>
+            <Link href="/tutorials">
               <a>Tutorial</a>
             </Link>
           </li>
-          <li>
-            <Link href="/blog/hello-world">
+          <li onClick={MenuBtn}>
+            <Link href="#">
               <a>Subcribe</a>
             </Link>
           </li>
